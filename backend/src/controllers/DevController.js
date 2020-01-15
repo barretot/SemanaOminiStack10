@@ -20,7 +20,7 @@ module.exports = {
     async store(request, response) {
         const { github_username, techs, latitude, longitude } = request.body
 
-        // Pedindo usuarios ao github com axios
+        // Request github users with axios
         const apiResponse = await axios.get(`https://api.github.com/users/${github_username}`)
         // Continua depois que o await retornar algo
 
