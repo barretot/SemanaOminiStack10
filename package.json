@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "expo-cli": "^3.11.7",
+    "global": "^4.4.0"
+  }
+}
