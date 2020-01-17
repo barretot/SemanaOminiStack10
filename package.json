@@ -1,6 +1,8 @@
 {
   "dependencies": {
     "expo-cli": "^3.11.7",
-    "global": "^4.4.0"
+    "expo-location": "^8.0.0",
+    "global": "^4.4.0",
+    "react-native-webview": "^8.0.3"
   }
 }
