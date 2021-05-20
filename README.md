@@ -1,68 +1,70 @@
-<h4 align="center">
-  🚀 Semana OmniStack 10.0
-</h4>
-<p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Rocketseat/semana-omnistack-10">
+<img src="./static/omnistack.png" align="center"></img>
+<h1 align="center">Semana Omnistack 10</h1>
+<p align="center">Projeto <strong>DevRadar</strong> desenvolvido durante a Omnistack da Rocketseat</p>
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/Rocketseat/semana-omnistack-10">
-  
-  <a href="https://github.com/Rocketseat/semana-omnistack-10/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Rocketseat/semana-omnistack-10">
+<p align="center">
+  <a aria-label="Versão do Node" href="https://github.com/nodejs/node/blob/master/doc/changelogs/CHANGELOG_V12.md#12.14.1">
+    <img src="https://img.shields.io/badge/node.js@lts-12.14.1-informational?logo=Node.JS"></img>
   </a>
-
-  <a href="https://github.com/Rocketseat/semana-omnistack-10/issues">
-    <img alt="Repository issues" src="https://img.shields.io/github/issues/Rocketseat/semana-omnistack-10">
+  <a aria-label="Versão do React" href="https://github.com/facebook/react/blob/master/CHANGELOG.md#16120-november-14-2019">
+    <img src="https://img.shields.io/badge/react-16.12.0-informational?logo=react"></img>
   </a>
-
-  <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
+  <a aria-label="Versão do Expo" href="https://www.npmjs.com/package/expo-cli/v/3.11.5">
+    <img src="https://img.shields.io/badge/expo--CLI-3.11.5-informational?logo=expo"></img>
+  </a>
+  <a aria-label="Desafios" href="DESAFIOS.md">
+  	<img src="https://img.shields.io/badge/desafios-OK-blueviolet"></img>
+  </a>
+  <a aria-label="Completo" href="https://rocketseat.com.br/week-10/aulas#4">
+    <img src="https://img.shields.io/badge/OmniStack-done-green?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAALVBMVEVHcExxWsF0XMJzXMJxWcFsUsD///9jRrzY0u6Xh9Gsn9n39fyMecy0qd2bjNJWBT0WAAAABHRSTlMA2Do606wF2QAAAGlJREFUGJVdj1cWwCAIBLEsRU3uf9xobDH8+GZwUYi8i6ucJwrxKE+7D0G9Q4vlYqtmCSjndr4CgCgzlyFgfKfKCVO0LrPKjmiqMxGXkJwNnXskqWG+1oSM+BSwD8f29YLNjvx/OQrn+g99oQSoNmt3PgAAAABJRU5ErkJggg=="></img>
+  </a>
 </p>
 
-<p align="center">
-  <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-como-contribuir">Como contribuir</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
-</p>
+## Instalação
+Configure o MongoDB e atualize a string de conexão com seu `User:Senha` no arquivo `index.js`.  
+Para instalar as dependências e executar o **Servidor** (modo desenvolvimento), clone o projeto em seu computador e em seguida execute:
+```bash
+cd backend
+yarn install
+yarn dev
+```
+Para iniciar o **Frontend** do React utilize os comandos:
+```bash
+cd frontend
+yarn install
+yarn start
+```
+Assim que o processo terminar, automaticamente será aberta no seu navegador a página `localhost:3000` contendo o Projeto desenvolvido no dia 3 de 5.  
 
-<br>
+Para testar o **Mobile** do React Native, primeiro coloque o endereço do seu servidor (ou computador) no arquivo `src/services/api.js`, e depois execute os comandos:
+```bash
+# NÃO é preciso executar a linha de baixo caso ja tenha o Expo (CLI) instalado!
+yarn global add install expo-cli
+cd mobile
+yarn install
+yarn start
+```
+Assim que o processo terminar, automaticamente será aberta no seu navegador a página `localhost:19002`. Conecte seu emulador, ou teste o aplicativo por `LAN`: baixe o aplicativo *Expo* da Play Store ou App Store e em seguida escaneie o código QR.
 
-<p align="center">
-  <img alt="Frontend" src=".github/devradar.png" width="100%">
-</p>
+## Backend
+Veja em [backend/README.md](./backend) para informações sobre o Backend e arquitetura.
 
-## :rocket: Tecnologias
+## Frontend
+Veja em [frontend/README.md](./frontend) para informações sobre o Frontend e os padrões. O Frontend desenvolvido no Dia 3 (com o [desafio](DESAFIOS.md) feito) ficou assim:
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+<img align="center" src="./static/frontend.gif"></img>
 
-- [Node.js](https://nodejs.org/en/)
-- [React](https://reactjs.org)
-- [React Native](https://facebook.github.io/react-native/)
-- [Expo](https://expo.io/)
+## Mobile
+O App Mobile (React Native) desenvolvido no Dia 4 e aprimorado no Dia 5 com Sockets (+ o [desafio](DESAFIOS.md) feito) ficou assim:
 
-## 💻 Projeto
+<img align="center" src="./static/mobile.gif?v=2"></img>
 
-O DevRadar é um projeto que visa conectar desenvolvedores próximos a você que trabalham com as mesmas tecnologias.
+## Imnsonia 
+Para testar a API do DevRadar, baixe e instale o [Insomnia](https://insomnia.rest/download/) e em seguida clique na Workspace → `Import/Export` →  
+`Import Data` → `From File` → e selecione o arquivo ` 	Insomnia_export.json` deste repositório. Assim que terminar, o resultado ficará assim:  
 
-## 🔖 Layout
+<img align="center" src="./static/insomnia.png"></img>
 
-Você pode baixar o layout do projeto no formato `.sketch` através [desse link](.github/DevRadar.sketch).
+## Licença
 
-Para abrir o arquivo no formato `.sketch` em qualquer sistema operacional utilize a ferramenta [Figma](https://figma.com).
-
-## 🤔 Como contribuir
-
-- Faça um fork desse repositório;
-- Cria uma branch com a sua feature: `git checkout -b minha-feature`;
-- Faça commit das suas alterações: `git commit -m 'feat: Minha nova feature'`;
-- Faça push para a sua branch: `git push origin minha-feature`.
-
-Depois que o merge da sua pull request for feito, você pode deletar a sua branch.
-
-## :memo: Licença
-
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
-
----
-
-Feito com ♥ by Rocketseat :wave: [Entre na nossa comunidade!](https://discordapp.com/invite/gCRAFhc)
+[MIT](./LICENSE) &copy; [Rocketseat](https://rocketseat.com.br/)
